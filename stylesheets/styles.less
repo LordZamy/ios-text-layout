@@ -4,5 +4,48 @@ html, body {
 form {
 	* {
 		display: block;
+		margin-top: 20px;
+		text-align: center;
+		font-size: 1.6rem;
+		padding: 10px 16px;
+		line-height: 1.33;
+		width: 150px;
+		border-radius: 4px;
+	}
+
+	input {
+		text-transform: uppercase;
+		font-weight: bold;
+		background-color: #ffffff;
+		color: #555555;
+		transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		border: 1px solid #cccccc;
+		height: 35px;
+
+		&:focus {
+			border-color: #66afe9;
+			outline: 0;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+			outline-offset: -2px;
+		}
+	}
+
+	button {
+		background-color: #ffffff;
+		border: 1px solid #cccccc;
+		color: #333333;
+		padding: 6px 12px;
+		&:active {
+			outline: 0;
+		}
+
+		&:focus {
+			outline-offset: -2px;
+		}
+
+		&:hover {
+			background-color: #e6e6e6;
+			border-color: #adadad;
+		}
 	}
 }
