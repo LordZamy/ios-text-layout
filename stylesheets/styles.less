@@ -1,5 +1,7 @@
 html, body {
 	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 .outer {
@@ -26,6 +28,7 @@ html, body {
 }
 
 form {
+	margin-top: -36px;
 	* {
 		display: block;
 		margin-top: 20px;
@@ -74,6 +77,26 @@ form {
 		&:hover {
 			background-color: #3071a9;
 			border-color: #285e8e;
+		}
+		
+		&.btn-blue {
+			background-color: #428bca;
+			border: 1px solid #357ebd;
+		
+			&:hover {
+				background-color: #3071a9;
+				border-color: #285e8e;
+			}
+		}
+
+		&.btn-red {
+			background-color: #d9534f;
+			border: 1px solid #d43f3a;
+
+			&:hover {
+				background-color: #c9302c;
+				border-color: #ac2925;
+			}
 		}
 	}
 }

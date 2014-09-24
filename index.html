@@ -13,15 +13,20 @@
     <div class="outer left">
         <div class="middle">
             <div class="inner">
-                <form>
+                <form id="render-form">
                     <input type="text" maxlength="4" uppercase autofocus placeholder="LINE 1" />
                     <input type="text" maxlength="4" uppercase placeholder="LINE 2" />
                     <input type="text" maxlength="4" uppercase placeholder="LINE 3" />
                     <input type="text" maxlength="4" uppercase placeholder="LINE 4" />
-                    <button id="form-submit">Generate</button>
+                    <input type="text" maxlength="4" uppercase placeholder="LINE 5" />
+                    <button id="form-submit" class="btn-blue">Generate</button>
+                    <button class="btn-red" onclick="document.getElementById('render-form').reset();">Reset</button>
                 </form>
             </div>
         </div>
+    </div>
+    <div class="right">
+		<canvas id="render"></canvas>
     </div>
 </body>
 
