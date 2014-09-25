@@ -12,21 +12,25 @@
 <body>
     <div class="outer left">
         <div class="middle">
-            <div class="inner">
+            <div class="inner-left">
                 <form id="render-form">
                     <input type="text" maxlength="4" uppercase autofocus placeholder="LINE 1" />
                     <input type="text" maxlength="4" uppercase placeholder="LINE 2" />
                     <input type="text" maxlength="4" uppercase placeholder="LINE 3" />
                     <input type="text" maxlength="4" uppercase placeholder="LINE 4" />
                     <input type="text" maxlength="4" uppercase placeholder="LINE 5" />
-                    <button id="form-submit" class="btn-blue">Generate</button>
-                    <button class="btn-red" onclick="document.getElementById('render-form').reset();">Reset</button>
+                    <button id="form-submit" class="btn-blue" onclick="return false;">Generate</button>
+                    <button class="btn-red" onclick="document.getElementById('render-form').reset(); return false;">Reset</button>
                 </form>
             </div>
         </div>
     </div>
-    <div class="right">
-		<canvas id="render"></canvas>
+    <div class="outer right">
+        <div class="middle">
+            <div class="inner-right">
+                <canvas id="render" width="320" height="568"></canvas>
+            </div>
+        </div>
     </div>
 </body>
 
