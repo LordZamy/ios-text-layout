@@ -4,12 +4,26 @@ $(document).ready(function() {
 
 	addImage('images/ios-background.png');
 
+
 	function addImage(url, x, y, scaleX, scaleY) {
 		var img = new Image();
 		img.src = url;
 
 		img.onload = function() {
 			ctx.drawImage(img, x || 0, y || 0, img.width * (scaleX || 0.5), img.height * (scaleY || 0.5));
+		}
+	}
+
+	function addIcon(url, x, y, radius, scaleX, scaleY) {
+		var img = new Image();
+		img.src = url;
+
+		img.onload = function() {
+			ctx.save();
+			roundedImage(x, y, img.width * (scaleX || 0.5), img.height * (scaleY || 0.5), radius || 10);
+			ctx.clip();
+			ctx.drawImage(img, x, y, img.width * (scaleX || 0.5), img.height * (scaleY || 0.5));
+			ctx.restore();
 		}
 	}
 
