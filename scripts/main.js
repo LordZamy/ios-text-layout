@@ -4,6 +4,7 @@ $(document).ready(function() {
 
 	addImage('images/ios-background.png');
 
+	addIcon('images/dictionary.jpg', 20, 20, 10);	
 
 	function addImage(url, x, y, scaleX, scaleY) {
 		var img = new Image();
@@ -20,9 +21,9 @@ $(document).ready(function() {
 
 		img.onload = function() {
 			ctx.save();
-			roundedImage(x, y, img.width * (scaleX || 0.5), img.height * (scaleY || 0.5), radius || 10);
+			roundedImage(x, y, img.width * (scaleX || 0.4), img.height * (scaleY || 0.4), radius || 10);
 			ctx.clip();
-			ctx.drawImage(img, x, y, img.width * (scaleX || 0.5), img.height * (scaleY || 0.5));
+			ctx.drawImage(img, x, y, img.width * (scaleX || 0.4), img.height * (scaleY || 0.4));
 			ctx.restore();
 		}
 	}
