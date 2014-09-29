@@ -9,10 +9,77 @@
 
 	],
 	"D": [
-		"dictionary.jpg"
+		"dictionary"
 	],
 	"E": [
-		"engadget.jpg",
-		"eventbrite.jpg"
+		"engadget",
+		"eventbrite"
+	],
+	"F": [
+		"facebook",
+		"flipboard"
+	],
+	"G": [
+		"google"
+	],
+	"H": [
+		"hotels"
+	],
+	"I": [
+		"instapaper"
+	],
+	"K": [
+		"kayak"
+	],
+	"L": [
+
+	],
+	"M": [
+		"gmail"
+	],
+	"N": [
+		"nimbuzz"
+	],
+	"O": [
+
+	],
+	"P": [
+		"pandora",
+		"pinterest"
+	],
+	"Q": [
+		"quora"
+	],
+	"R": [
+
+	],
+	"S": [
+		"shazam",
+		"skype",
+		"snapguide"
+	],
+	"T": [
+		"tango",
+		"tumblr"
+	],
+	"U": [
+		"uber"
+	],
+	"V": [
+		"vine"
+	],
+	"W": [
+		"wallet",
+		"wikipedia",
+		"wordpress"
+	],
+	"X": [
+
+	],
+	"Y": [
+		"yammer"
+	],
+	"Z": [
+		
 	]
 }
