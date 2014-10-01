@@ -4,7 +4,11 @@ $(document).ready(function() {
 
 	addImage('images/ios-background.png');
 
-	addIcon('images/dictionary.jpg', 20, 20, 10);	
+	// test hard-coded image positioning for 320px width
+	addIcon('images/dictionary.jpg', 16, 20);
+	addIcon('images/engadget.jpg', 92, 20);
+	addIcon('images/eventbrite.jpg', 168, 20);
+	addIcon('images/facebook.jpg', 244, 20);
 
 	function addImage(url, x, y, scaleX, scaleY) {
 		var img = new Image();
