@@ -2,13 +2,15 @@ $(document).ready(function() {
 	var canvas = document.getElementById('render');
 	var ctx = canvas.getContext('2d');
 
-	addImage('images/ios-background.png');
+	var backgroundImage = addImage('images/ios-background.png');
 
-	// test hard-coded image positioning for 320px width
-	addIcon('images/dictionary.jpg', 16, 20);
-	addIcon('images/engadget.jpg', 92, 20);
-	addIcon('images/eventbrite.jpg', 168, 20);
-	addIcon('images/facebook.jpg', 244, 20);
+	$(backgroundImage).on('imgload', function() {
+		// test hard-coded image positioning for 320px width
+		addIcon('images/dictionary.jpg', 16, 20);
+		addIcon('images/engadget.jpg', 92, 20);
+		addIcon('images/eventbrite.jpg', 168, 20);
+		addIcon('images/facebook.jpg', 244, 20);
+	});
 
 	function addImage(url, x, y, scaleX, scaleY) {
 		var img = new Image();
@@ -16,7 +18,10 @@ $(document).ready(function() {
 
 		img.onload = function() {
 			ctx.drawImage(img, x || 0, y || 0, img.width * (scaleX || 0.5), img.height * (scaleY || 0.5));
+			$(img).trigger('imgload');
 		}
+
+		return img;
 	}
 
 	function addIcon(url, x, y, radius, scaleX, scaleY) {
