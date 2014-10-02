@@ -1,12 +1,12 @@
 {
 	"A": [
-
+		"appzapp"
 	],
 	"B": [
-
+		"beamly"
 	],
 	"C": [
-
+		"codea"
 	],
 	"D": [
 		"dictionary"
@@ -60,6 +60,7 @@
 	],
 	"T": [
 		"tango",
+		"textastic",
 		"tumblr"
 	],
 	"U": [
@@ -71,15 +72,16 @@
 	"W": [
 		"wallet",
 		"wikipedia",
-		"wordpress"
+		"wordpress",
+		"writeup"
 	],
 	"X": [
-
+		"comics"
 	],
 	"Y": [
 		"yammer"
 	],
 	"Z": [
-		
+		"zinio"
 	]
 }
