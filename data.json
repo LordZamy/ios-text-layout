@@ -1,6 +1,7 @@
 {
 	"A": [
-		"appzapp"
+		"appzapp",
+		"app.net"
 	],
 	"B": [
 		"beamly"
@@ -14,7 +15,8 @@
 	],
 	"E": [
 		"engadget",
-		"eventbrite"
+		"eventbrite",
+		"eventful"
 	],
 	"F": [
 		"facebook",
@@ -30,7 +32,8 @@
 		"instapaper"
 	],
 	"K": [
-		"kayak"
+		"kayak",
+		"kypass"
 	],
 	"L": [
 
@@ -39,7 +42,8 @@
 		"gmail"
 	],
 	"N": [
-		"nimbuzz"
+		"nimbuzz",
+		"nordstrom"
 	],
 	"O": [
 		"opera"
@@ -65,7 +69,8 @@
 		"tumblr"
 	],
 	"U": [
-		"uber"
+		"uber",
+		"ustream"
 	],
 	"V": [
 		"vine"
