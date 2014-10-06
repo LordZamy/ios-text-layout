@@ -1,14 +1,18 @@
 {
 	"A": [
 		"appzapp",
-		"app.net"
+		"app.net",
+		"archinect",
+		"theatlantic"
 	],
 	"B": [
-		"beamly"
+		"beamly",
+		"backspaces"
 	],
 	"C": [
 		"coast",
-		"codea"
+		"codea",
+		"circa"
 	],
 	"D": [
 		"dictionary"
@@ -30,7 +34,8 @@
 		"hotels"
 	],
 	"I": [
-		"instapaper"
+		"instapaper",
+		"itemizer"
 	],
 	"K": [
 		"kayak",
