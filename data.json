@@ -15,6 +15,7 @@
 		"circa"
 	],
 	"D": [
+		"descrambler",
 		"dictionary"
 	],
 	"E": [
@@ -43,6 +44,7 @@
 		"kypass"
 	],
 	"L": [
+		"luminance",
 		"lumman"
 	],
 	"M": [
@@ -93,7 +95,8 @@
 		"comics"
 	],
 	"Y": [
-		"yammer"
+		"yammer",
+		"ynet"
 	],
 	"Z": [
 		"zinio"
