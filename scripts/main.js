@@ -2,6 +2,8 @@ $(document).ready(function() {
 	var canvas = document.getElementById('render');
 	var ctx = canvas.getContext('2d');
 
+	var wordArr = []; 
+
 	var backgroundImage = addImage('images/ios-background.png');
 
 	$(backgroundImage).on('imgload', function() {
@@ -10,6 +12,16 @@ $(document).ready(function() {
 		addIcon('images/engadget.jpg', 92, 20);
 		addIcon('images/eventbrite.jpg', 168, 20);
 		addIcon('images/facebook.jpg', 244, 20);
+	});
+
+	$("#form-submit").click(function() {
+		wordArr = [];
+		$("#render-form :input").each(function() {
+			var input = $(this);
+			if(input.val() !== "") {
+				wordArr.push(input.val().toUpperCase().split(""));
+			}
+		});
 	});
 
 	function addImage(url, x, y, scaleX, scaleY) {
