@@ -69,7 +69,8 @@
 		"quora"
 	],
 	"R": [
-		"redfin"
+		"redfin",
+		"ruzzle"
 	],
 	"S": [
 		"shazam",
@@ -96,13 +97,15 @@
 		"writeup"
 	],
 	"X": [
-		"comics"
+		"comics",
+		"xsync"
 	],
 	"Y": [
 		"yammer",
 		"ynet"
 	],
 	"Z": [
-		"zinio"
+		"zapya",
+		"zoomingo"
 	]
 }
