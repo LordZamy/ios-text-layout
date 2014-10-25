@@ -12,6 +12,26 @@ $(document).ready(function() {
 		addIcon('images/engadget.jpg', 92, 20);
 		addIcon('images/eventbrite.jpg', 168, 20);
 		addIcon('images/facebook.jpg', 244, 20);
+
+		addIcon('images/dictionary.jpg', 16, 110);
+		addIcon('images/engadget.jpg', 92, 110);
+		addIcon('images/eventbrite.jpg', 168, 110);
+		addIcon('images/facebook.jpg', 244, 110);
+
+		addIcon('images/dictionary.jpg', 16, 200);
+		addIcon('images/engadget.jpg', 92, 200);
+		addIcon('images/eventbrite.jpg', 168, 200);
+		addIcon('images/facebook.jpg', 244, 200);
+	
+		addIcon('images/dictionary.jpg', 16, 290);
+		addIcon('images/engadget.jpg', 92, 290);
+		addIcon('images/eventbrite.jpg', 168, 290);
+		addIcon('images/facebook.jpg', 244, 290);
+	
+		addIcon('images/dictionary.jpg', 16, 380);
+		addIcon('images/engadget.jpg', 92, 380);
+		addIcon('images/eventbrite.jpg', 168, 380);
+		addIcon('images/facebook.jpg', 244, 380);
 	});
 
 	$("#form-submit").click(function() {
