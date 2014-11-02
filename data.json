@@ -36,7 +36,9 @@
 	],
 	"F": [
 		"facebook",
-		"flipboard"
+		"fetchnotes",
+		"flipboard",
+		"flipdrive"
 	],
 	"G": [
 		"goodreads",
@@ -69,7 +71,8 @@
 	],
 	"M": [
 		"gmail",
-		"manila"
+		"manila",
+		"moonit"
 	],
 	"N": [
 		"nimbuzz",
