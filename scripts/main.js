@@ -25,7 +25,7 @@ $(document).ready(function() {
 		$("#render-form :input").each(function() {
 			var input = $(this);
 			if (input.val() !== "") {
-				wordArr.push(input.val().toUpperCase().replace(/[_\W]/g, '').split(""));
+				wordArr.push(input.val().toUpperCase().replace(/[0-9_\W]/g, '').split(""));
 			}
 		});
 		renderLayout();
