@@ -17,7 +17,7 @@ $(document).ready(function() {
 	$.getJSON('data.json', function(data) {
 		iconObj = data;
 	}).fail(function() {
-		alert('There was a problem loading JSON.');
+		alert('There was a problem loading/reading JSON.');
 	});
 
 	$("#form-submit").click(function() {
@@ -25,7 +25,7 @@ $(document).ready(function() {
 		$("#render-form :input").each(function() {
 			var input = $(this);
 			if (input.val() !== "") {
-				wordArr.push(input.val().toUpperCase().split(""));
+				wordArr.push(input.val().toUpperCase().replace(/[_\W]/g, '').split(""));
 			}
 		});
 		renderLayout();
