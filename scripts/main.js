@@ -4,8 +4,12 @@ $(document).ready(function() {
 
 	var wordArr = [];
 	var iconObj;
+
+	/* hard coded values for 320px width layout */
+	// top and left margins
 	var startX = 16;
 	var startY = 20;
+	// spacing between icons
 	var spaceX = 76;
 	var spaceY = 90;
 
