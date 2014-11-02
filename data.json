@@ -23,13 +23,16 @@
 	"D": [
 		"descrambler",
 		"dictionary",
+		"dijit",
+		"donedeal",
 		"downtown"
 	],
 	"E": [
 		"engadget",
 		"eventbrite",
 		"eventful",
-		"everyday.me"
+		"everyday.me",
+		"vemma"
 	],
 	"F": [
 		"facebook",
