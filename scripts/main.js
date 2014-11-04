@@ -65,7 +65,8 @@ $(document).ready(function() {
 
 		img.onload = function() {
 			ctx.save();
-			roundedImage(x, y, img.width * (scaleX || 0.4), img.height * (scaleY || 0.4), radius || 10);
+			// hardcoded default values for 320px width
+			roundedImage(x, y, img.width * (scaleX || 0.4), img.height * (scaleY || 0.4), radius || 10.5);
 			ctx.clip();
 			ctx.drawImage(img, x, y, img.width * (scaleX || 0.4), img.height * (scaleY || 0.4));
 			ctx.restore();
