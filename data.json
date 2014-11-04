@@ -59,7 +59,8 @@
 	],
 	"I": [
 		"instapaper",
-		"itemizer"
+		"itemizer",
+		"field_agent"
 	],
 	"J": [
 		"jackthreads",
@@ -105,9 +106,12 @@
 	],
 	"Q": [
 		"quickmark",
-		"quora"
+		"quizlet",
+		"quora",
+		"wxqr"
 	],
 	"R": [
+		"recapp",
 		"recommend",
 		"redfin",
 		"ruzzle"
