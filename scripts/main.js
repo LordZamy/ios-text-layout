@@ -73,6 +73,7 @@ $(document).ready(function() {
 		}
 	}
 
+	// code taken from http://stackoverflow.com/a/19593950/1593122
 	function roundedImage(x, y, width, height, radius) {
 		ctx.beginPath();
 		ctx.moveTo(x + radius, y);
