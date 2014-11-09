@@ -9,7 +9,8 @@ $(document).ready(function() {
     var scratchCtx = scratchCanvas.getContext('2d');
 
     var wordArr = [];
-    var iconObj;
+    var dataObj;    // for storing data.json
+    var iconObj;    // copies dataObj
 
     /* hard coded values for 320px width layout */
     // top and left margins
@@ -23,7 +24,7 @@ $(document).ready(function() {
 
     // load data.json
     $.getJSON('data.json', function(data) {
-        iconObj = data;
+        dataObj = data;
     }).fail(function() {
         alert('There was a problem loading/reading JSON.');
     });
@@ -40,13 +41,14 @@ $(document).ready(function() {
     });
 
     function renderLayout() {
+        iconObj = JSON.parse(JSON.stringify(dataObj));  // use a fresh object to modify
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         var backgroundImage = addImage('images/ios-background.png');
         $(backgroundImage).on('imgload', function() {
             for (var i = 0; i < wordArr.length; i++) {
                 for (var j = 0; j < wordArr[i].length; j++) {
                     // get random icon
-                    var icon = iconObj[wordArr[i][j]][Math.floor(Math.random() * iconObj[wordArr[i][j]].length)];
+                    var icon = iconObj[wordArr[i][j]].splice(Math.floor(Math.random() * iconObj[wordArr[i][j]].length), 1);
                     addIcon('images/' + icon + '.jpg', startX + spaceX * j, startY + spaceY * i);
                 }
             }
