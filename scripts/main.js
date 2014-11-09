@@ -48,9 +48,18 @@ $(document).ready(function() {
                     addIcon('images/' + icon + '.jpg', startX + spaceX * j, startY + spaceY * i);
                 }
             }
+            renderTray();
             $(backgroundImage).off();
         });
 
+    }
+
+    // function assumes clearing canvas is not needed
+    function renderTray() {
+        for(var i = 0; i < 4; i++) {
+            var icon = iconObj.MISC[Math.floor(Math.random() * iconObj.MISC.length)];
+            addIcon('images/' + icon + '.png', startX + spaceX * i, startY + spaceY * 5, 10.5, 0.51, 0.51);
+        }
     }
 
     function addImage(url, x, y, scaleX, scaleY) {
