@@ -47,6 +47,9 @@ $(document).ready(function() {
         $(backgroundImage).on('imgload', function() {
             for (var i = 0; i < wordArr.length; i++) {
                 for (var j = 0; j < wordArr[i].length; j++) {
+                    if(iconObj[wordArr[i][j]].length === 0) {
+                        iconObj[wordArr[i][j]] = JSON.parse(JSON.stringify(dataObj[wordArr[i][j]]));
+                    }
                     // get random icon
                     var icon = iconObj[wordArr[i][j]].splice(Math.floor(Math.random() * iconObj[wordArr[i][j]].length), 1);
                     addIcon('images/' + icon + '.jpg', startX + spaceX * j, startY + spaceY * i);
