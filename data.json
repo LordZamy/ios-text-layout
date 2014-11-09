@@ -165,12 +165,14 @@
 	"MISC": [
 		"app_store",
 		"camera",
+		"game_center",
 		"mail",
 		"maps",
 		"messages",
 		"music",
 		"photos",
 		"safari",
-		"settings"
+		"settings",
+		"videos"
 	]
 }
