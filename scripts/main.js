@@ -18,6 +18,8 @@ $(document).ready(function() {
     // spacing between icons
     var spaceX = 76;
     var spaceY = 90;
+    //spacing between tray and icons
+    var iconTrayOffset = (canvas.height - startY - spaceY * 5 - 60) / 2;
 
     // load data.json
     $.getJSON('data.json', function(data) {
@@ -63,11 +65,11 @@ $(document).ready(function() {
         ctx.fillStyle = "#ffffff";
         ctx.fill();
         ctx.closePath();
-        ctx.globalAlpha = 1;    // set alpha back to 1 
+        ctx.globalAlpha = 1;    // set alpha back to 1
 
         for(var i = 0; i < 4; i++) {
             var icon = iconObj.MISC[Math.floor(Math.random() * iconObj.MISC.length)];
-            addIcon('images/' + icon + '.png', startX + spaceX * i, startY + spaceY * 5, 10.5, 0.51, 0.51);
+            addIcon('images/' + icon + '.png', startX + spaceX * i, startY + spaceY * 5 + iconTrayOffset, 10.5, 0.51, 0.51);
         }
     }
 
