@@ -70,7 +70,7 @@ $(document).ready(function() {
         ctx.globalAlpha = 1;    // set alpha back to 1
 
         for(var i = 0; i < 4; i++) {
-            var icon = iconObj.MISC[Math.floor(Math.random() * iconObj.MISC.length)];
+            var icon = iconObj.MISC.splice(Math.floor(Math.random() * iconObj.MISC.length), 1);
             addIcon('images/' + icon + '.png', startX + spaceX * i, startY + spaceY * 5 + iconTrayOffset, 10.5, 0.51, 0.51);
         }
     }
