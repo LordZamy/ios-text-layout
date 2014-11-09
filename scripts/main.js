@@ -56,6 +56,15 @@ $(document).ready(function() {
 
     // function assumes clearing canvas is not needed
     function renderTray() {
+        // draw a rectangle for the tray
+        ctx.globalAlpha = 0.2;  // change alpha to make tray translucent
+        ctx.beginPath();
+        ctx.rect(0, startY + spaceY * 5, canvas.width, canvas.height - startY - spaceY * 5);
+        ctx.fillStyle = "#ffffff";
+        ctx.fill();
+        ctx.closePath();
+        ctx.globalAlpha = 1;    // set alpha back to 1 
+
         for(var i = 0; i < 4; i++) {
             var icon = iconObj.MISC[Math.floor(Math.random() * iconObj.MISC.length)];
             addIcon('images/' + icon + '.png', startX + spaceX * i, startY + spaceY * 5, 10.5, 0.51, 0.51);
