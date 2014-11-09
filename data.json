@@ -161,5 +161,14 @@
 	"Z": [
 		"zapya",
 		"zoomingo"
+	],
+	"MISC": [
+		"app_store",
+		"camera",
+		"mail",
+		"messages",
+		"music",
+		"safari",
+		"settings"
 	]
 }
