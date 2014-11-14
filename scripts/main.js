@@ -54,7 +54,7 @@ $(document).ready(function() {
                     var icon = iconObj[wordArr[i][j]].splice(Math.floor(Math.random() * iconObj[wordArr[i][j]].length), 1);
                     addIcon('images/' + icon + '.jpg', startX + spaceX * j, startY + spaceY * i);
                 }
-                if(wordArr[i].length < 4) {
+                if(wordArr[i].length < 4 && i !== wordArr.length - 1) {
                     for(var k = 0; k < 4 - wordArr[i].length; k++) {
                         if(iconObj.MISC.length === 0) {
                             iconObj.MISC = JSON.parse(JSON.stringify(dataObj.MISC));
