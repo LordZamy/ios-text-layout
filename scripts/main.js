@@ -54,6 +54,15 @@ $(document).ready(function() {
                     var icon = iconObj[wordArr[i][j]].splice(Math.floor(Math.random() * iconObj[wordArr[i][j]].length), 1);
                     addIcon('images/' + icon + '.jpg', startX + spaceX * j, startY + spaceY * i);
                 }
+                if(wordArr[i].length < 4) {
+                    for(var k = 0; k < 4 - wordArr[i].length; k++) {
+                        if(iconObj.MISC.length === 0) {
+                            iconObj.MISC = JSON.parse(JSON.stringify(dataObj.MISC));
+                        }
+                        var icon = iconObj.MISC.splice(Math.floor(Math.random() * iconObj.MISC.length), 1);
+                        addIcon('images/' + icon + '.png', startX + spaceX * (j + k), startY + spaceY * i, 10.5, 0.51, 0.51);
+                    }
+                }
             }
             renderTray();
             $(backgroundImage).off();
@@ -73,6 +82,9 @@ $(document).ready(function() {
         ctx.globalAlpha = 1;    // set alpha back to 1
 
         for(var i = 0; i < 4; i++) {
+            if(iconObj.MISC.length === 0) {
+                iconObj.MISC = JSON.parse(JSON.stringify(dataObj.MISC));
+            }
             var icon = iconObj.MISC.splice(Math.floor(Math.random() * iconObj.MISC.length), 1);
             addIcon('images/' + icon + '.png', startX + spaceX * i, startY + spaceY * 5 + iconTrayOffset, 10.5, 0.51, 0.51);
         }
